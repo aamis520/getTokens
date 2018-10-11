@@ -1,0 +1,122 @@
+.mint-actionsheet-listitem,
+.mint-actionsheet-button {
+  font-size: 16px;/*px*/
+  line-height: 40px !important;
+  height: 40px !important;
+}
+
+/* 下边是input输入框的placehoder的颜色 */
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  /*px*/
+  /* WebKit browsers */
+  color: #666;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  font-size: 14px;
+  /*px*/
+  /* Mozilla Firefox 4 to 18 */
+  color: #666;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-size: 14px;
+  /*px*/
+  /* Mozilla Firefox 19+ */
+  color: #666;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-size: 14px;
+  /*px*/
+  /* Internet Explorer 10+ */
+  color: #666;
+}
+
+.redRemark_tabbar a {
+  color: black;
+}
+
+.tabBar a {
+  color: #010101;
+}
+
+.mint-toast-icon {
+  font-size: 30px;
+  /*px*/
+}
+
+.mint-toast-text {
+  font-size: 16px;
+  /*px*/
+}
+
+.switch {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  transform: scale(1.5);
+  text-align: right;
+}
+
+.mint-switch-input:checked+.mint-switch-core {
+  border-color: #fdd401;
+  background-color: #fdd401;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .4);
+}
+
+/* router-link :to 点击时出现下划线问题 */
+
+.router-link-active {
+  text-decoration: none;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {}
+
+/* 清楚浮动 */
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
